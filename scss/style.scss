@@ -13,6 +13,9 @@ a{
     text-decoration: none;
     color:$blanco;
 }
+h1{
+    color:rgb(29, 161, 5);
+}
 h2{
     color:$blanco;
     margin-bottom: 30px;
@@ -25,12 +28,11 @@ h3{
     color:$blanco;
 }
 body{
-    display: flex;
     background-image: url("../media/humofondo.png");
     background-position: center;
     background-attachment: fixed;
 }
-/* .cabecera{
+.cabecera{
     display: inline;
     .cont-cabe{
         background-color:$colorfondo;
@@ -47,7 +49,7 @@ body{
         border-radius: 20px; 
     }
 
-} */
+}
 .redes-so-items2{
     display: inline;
     margin: 10px;
@@ -69,7 +71,7 @@ body{
         border-radius: 20px; 
     }
 }
-/* @media screen and (max-width:600px){
+@media screen and (max-width:600px){
     .cabecera{
         width: 100%;
         height: 60px;
@@ -95,7 +97,7 @@ body{
         display: inline;
         margin: 10px;
     }  
-}  */
+} 
 .navbar{
     position: sticky;
     background-color: $bordecolor;
@@ -109,6 +111,7 @@ body{
         border-radius: 5px; 
 
         &:hover{
+            transition:all .5s ease-in-out;
             background-color: $hovermenu;
         } 
     }
@@ -143,6 +146,20 @@ body{
 #check-menu:checked~ul {
     display: block;
 }
+
+/* GRID */
+.imagen{
+    width: 100%;
+}
+.imagen img{
+    width: 100%;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+/* ------------- */
+
 .botonarriba{
     color: $blanco;
     text-align:center;
@@ -161,41 +178,27 @@ body{
     border-color:$bordecolor;
     .boton{
         display: inline-block;
-        border-radius: 50px;
-        background-color:#ffffff;
+        border-radius: 5px;
+        background-color: #013409;
         border-style:double ;
         border-width: 2px;
-        border-color:yellow;
+        border-color:rgb(42, 90, 10);
         padding: 4px 10px;
+        color:  #87ff91;
         margin: auto; 
         margin-top: 20px;
+        &:hover{
+            transition:all .5s ease-in-out;
+            background-color: #000000;
+            color:#87ff91;
+            border-radius: 20px;
+        }
     }
 }
-/* GRID */
-.imagen{
-    width: 30%;
-}
-.imagen img{
-    width: 30%;
-}
-.galeria{
-    width: 30%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    row-gap: .5rem;
-}
-/* ------------- */
-
-
-
-.contenedorbanda{
-    display:flex;
-}
 .fotobanda img{
-    display: flex;
     border-radius: 20px;
 }
+
 .disco1{
     display:flex;
     color:$blanco;
@@ -254,7 +257,7 @@ body{
         border-style:double;
         border-width: 2px;
         border-radius: 50px;
-        border-color:rgb(234, 206, 65);
+        border-color:rgb(42, 90, 10);
         padding: 4px 10px;
         color:  #adf3b5;
         &:hover{
@@ -265,6 +268,26 @@ body{
 
 .discografia h3{
     margin-bottom: 5px;
+}
+@media screen and (max-width:600px){
+    .disco2{
+        width: 80%;
+    }
+    .cuadrado{
+        width:175px;
+        height: 235px;
+    }
+    .discografia h3{
+        margin-bottom: 10px;
+    }
+    .escucharen{
+        text-align: center;
+        margin: 20px;
+        height: 50%;
+        left: 80%;
+        padding: 5px;
+        margin-top: 50px;
+    }
 }
 .contenedorbanda{
     text-align:center;
@@ -307,12 +330,18 @@ body{
 .fotobio{
     width: 600px;
 }
-@media screen and (max-width:800px){
+.contenedor:hover .imagen {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+.contenedor {overflow:hidden;}
+
+@media screen and (max-width:600px){
     .contenedorbanda{
         display: flex;
         text-align:center;
-        background-color:$colordegrade;
-        width: 80%;
+        background-color: rgb(0, 0, 0, 0.8);
+        width: 100%;
         height: 20%;
         margin: 0%;
     }
@@ -334,43 +363,8 @@ body{
     }
     .fotobio{
         display: center;
-        width: 300px;
-        height: 50%;
-    }
-}
-@media screen and (max-width:600px){
-    .contenedorbanda{
-        display: flex;
-        text-align:center;
-        background-color:$colordegrade;
-        width: 100%;
-        height: 20%;
-        margin: 0%;
-    }
-
-    .historia{
-        display: flex;
-    }
-    .bio{
-        display: center;
-    }
-    .integrantes{
-        display: center;
-        color:#ffffff;
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        margin-top: 20px;
-        margin-bottom: 25px;
-        padding: 10%;
-    }
-    .contenedorbandafoto{
-        display: flex;
-        text-align:center;
-        background-color:$colordegrade;
-        width: 100%;
-        height: 20%;
-        margin: 0%;
+        margin:0%;
+        width: 322px;
     }
 }
 .contacto{
@@ -413,18 +407,20 @@ body{
     margin-bottom: 20px;
 }
 .cont{
-    display: flex;
-    padding: 40px;
+    display: grid;
+    padding: 50px;
     margin-bottom: 100px;
-    margin-top: 60px;
+    margin-top: 20px;
+    justify-content: center;
 }
 .contgaleria{
-    display:flex;
+    display:grid;
     text-align:center;
     background-color: rgb(0, 0, 0, 0.8);
     width:auto;
     height: auto;
     padding: 10px;
+    
     h2{
         margin-bottom: 30px;
         text-align: center;
@@ -445,42 +441,59 @@ body{
         }
     }
 }
-
-.cont .album1{
-    display: flex;
-}
-.album1 img{
-    width: 300px;
-    height: 200px;
-    border-radius: 20px;
-    border-color: #000000;
-    border-style:solid;
-}
-.album1 .img2{
-    width: 300px;
-    height: 200px;
-    border-radius: 20px;
-    border-color:#013409;
-    border-style:groove;
-}
-.flayer img{
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    border-color: #000000;
-    border-style:solid;
-}
 .album1{
-	display:grid;
-	grid-template-columns: repeat(3, 380px);
+    display:grid;
+	grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    justify-items:normal;
+    justify-content: center;
+    img{
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+        border-color: #000000;
+        border-style:solid;
+    }
+    .img2{
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+        border-color:#013409;
+        border-style:groove;
+    }
 }
 .flayer{
 	display:grid;
-	grid-template-columns: repeat(3, 380px);
+	grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        border-color: #000000;
+        border-style:solid;
+    }
+}
+
+@media screen and (max-width:600px){
+    .cont{
+        display: grid;
+        padding: 50px;
+        margin-bottom: 50px;
+        margin-top: 10px;
+        grid-template-columns:repeat(1, 1fr);
+    }
+	.contgaleria{
+		grid-template-columns:repeat(1, 1fr);
+    }
+    .album1{
+        grid-template-columns:  repeat(1, 1fr);    
+        padding: 15px;    
+    }
+    .flayer{
+        grid-template-columns:  repeat(1, 1fr);
+        border-radius: 50%;
+    }
 }
 footer{
     background-color: rgb(42, 90, 10);
@@ -502,6 +515,8 @@ footer{
     margin-left: 10px;
     border-radius: 20px;
     &:hover{
-    background-color: rgb(88, 165, 37);
+        transition:all .5s ease-in-out;
+        background-color: rgb(88, 165, 37);
+
     } 
 }
