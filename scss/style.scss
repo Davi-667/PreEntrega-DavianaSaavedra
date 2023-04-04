@@ -53,7 +53,6 @@ body{
     display: inline;
     margin: 10px;
 }
-
 .cabecerasecundaria{
     .cont-cabe{
         background-color:$colorfondo;
@@ -71,6 +70,10 @@ body{
     }
 }
 @media screen and (max-width:600px){
+    .cont-cabe{
+        background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+        background-color: #000000;
+    }
     .cabecera{
         width: 100%;
         height: 60px;
@@ -79,6 +82,7 @@ body{
         border-radius: 0px;
     }
     .cabecera .enlaces-sup{
+        background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
         left: 50px;
         text-align: auto;
         border-radius: none;
@@ -236,7 +240,7 @@ body{
     display:flex;
     color:$blanco;
     text-align:center;
-    background-color: $colordegrade;
+    background-color: rgb(0, 0, 0, 0.5);
     padding: 5%;
     border-style: groove;
     border-width: 5px;
@@ -247,6 +251,20 @@ body{
         height: 50%;
         width: 50%;
     }
+    h1{
+        color:#ffffff;
+        background-color: rgb(0, 0, 0, 0.7);
+        border-radius: 50px;
+    }
+    .canciones{
+        background-color: rgb(0, 0, 0, 0.7);
+        font-size: center;
+        margin-top: 15px;
+        border-radius: 20px;
+        h3 {
+            margin-top: 20px;
+        }
+    }    
 }
 .disco2{
     display: center;
@@ -286,16 +304,22 @@ body{
     left: 80px;
     padding: 5px;
     margin-top: 50px;
-    .boton{   
-        border-style:double;
+    .boton{ 
+        border-radius: 5px;
+        background-color: #012106;
+        border-style:double ;
         border-width: 2px;
-        border-radius: 50px;
         border-color:rgb(42, 90, 10);
         padding: 4px 10px;
-        color:  #adf3b5;
+        color:  #87ff91;
+        margin: auto; 
+        margin-top: 20px;
         &:hover{
-            background-color: rgb(16, 39, 1);
-        } 
+            transition:all .5s ease-in-out;
+            background-color: #000000;
+            color:#87ff91;
+            border-radius: 30px;
+            }  
     }
 }
 
@@ -322,6 +346,7 @@ body{
         margin-top: 50px;
     }
 }
+
 .contenedorbanda{
     text-align:center;
     background-color: $colordegrade;
@@ -367,7 +392,9 @@ body{
     -webkit-transform:scale(1.3);transform:scale(1.3);
 }
 
-.contenedor {overflow:hidden;}
+.contenedor {
+    overflow:hidden;
+}
 
 @media screen and (max-width:600px){
     .contenedorbanda{
