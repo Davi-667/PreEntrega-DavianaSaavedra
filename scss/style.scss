@@ -35,10 +35,10 @@ body{
 .cabecera{
     display: inline;
     .cont-cabe{
-        background-color:$colorfondo;
+        background-image: linear-gradient(to right, rgb(1, 24, 8), rgb(0, 0, 0));
     }
     .enlaces-sup{
-        background-color:$colorfondo;
+        background-image: linear-gradient(to right, rgb(1, 24, 8), rgb(0, 0, 0));
         left: 800px;
         text-align-last: right;
     }
@@ -48,7 +48,6 @@ body{
         margin-left: 10px;
         border-radius: 20px; 
     }
-
 }
 .redes-so-items2{
     display: inline;
@@ -71,6 +70,39 @@ body{
         border-radius: 20px; 
     }
 }
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode: forw;
+    }
+    @-webkit-keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+} 
+  
 @media screen and (max-width:600px){
     .cabecera{
         width: 100%;
@@ -146,25 +178,25 @@ body{
 #check-menu:checked~ul {
     display: block;
 }
-
-/* GRID */
-.imagen{
-    width: 100%;
-}
-.imagen img{
-    width: 100%;
-}
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-/* ------------- */
-
 .botonarriba{
-    color: $blanco;
-    text-align:center;
-    margin-bottom: 5%;
-    padding: 10%;
+    margin-top: 40px;
+    .boton{
+        border-radius: 5px;
+        background-color: #013409;
+        border-style:double ;
+        border-width: 2px;
+        border-color:rgb(42, 90, 10);
+        padding: 4px 10px;
+        color:  #87ff91;
+        margin: auto; 
+        margin-top: 20px;
+        &:hover{
+            transition:all .5s ease-in-out;
+            background-color: #000000;
+            color:#87ff91;
+            border-radius: 20px;
+            }    
+    }
 }
 .banda{
     color: $blanco;
@@ -198,7 +230,6 @@ body{
 .fotobanda img{
     border-radius: 20px;
 }
-
 .disco1{
     display:flex;
     color:$blanco;
