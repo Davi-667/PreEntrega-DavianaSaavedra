@@ -222,8 +222,34 @@ body {
   border-radius: 20px;
 }
 
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 3s;
+  animation-fill-mode: none;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
 .fotobanda img {
   border-radius: 20px;
+}
+
+.discografia {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+.discografia h1 {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 .disco1 {
@@ -247,10 +273,10 @@ body {
   border-radius: 50px;
 }
 .disco1 .canciones {
-  background-color: rgba(0, 0, 0, 0.7);
   font-size: center;
   margin-top: 15px;
-  border-radius: 20px;
+  border-radius: 60px;
+  background: linear-gradient(hsla(283, 98%, 24%, 0.5) 10%, hsla(0, 0%, 0%, 0.8) 80%);
 }
 .disco1 .canciones h3 {
   margin-top: 20px;
@@ -311,7 +337,7 @@ body {
 .escucharen .boton:hover {
   transition: all 0.5s ease-in-out;
   background-color: #000000;
-  color: #87ff91;
+  color: #ffffff;
   border-radius: 30px;
 }
 
@@ -479,6 +505,14 @@ body {
   width: auto;
   height: auto;
   padding: 10px;
+}
+.contgaleria h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50px;
+  margin-top: 20px;
 }
 .contgaleria h2 {
   margin-bottom: 30px;
