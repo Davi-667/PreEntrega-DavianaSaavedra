@@ -39,10 +39,16 @@ body {
   display: inline;
 }
 .cabecera .cont-cabe {
-  background-image: linear-gradient(to right, rgb(1, 24, 8), rgb(0, 0, 0));
+  padding-top: 10px;
+  background-color: #000000;
+}
+.cabecera .cont-cabe2 {
+  padding-top: 10px;
+  padding-bottom: 1px;
+  background-color: #000000;
 }
 .cabecera .enlaces-sup {
-  background-image: linear-gradient(to right, rgb(1, 24, 8), rgb(0, 0, 0));
+  background-color: #000000;
   left: 800px;
   -moz-text-align-last: right;
        text-align-last: right;
@@ -101,6 +107,40 @@ body {
   .imglogo {
     height: 30px;
     width: 100px;
+  }
+  .redes-so-items2 {
+    display: inline;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .cont-cabe {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+    background-color: #000000;
+  }
+  .cabecera {
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    text-align: right;
+    border-radius: 0px;
+  }
+  .cabecera .enlaces-sup {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+    margin-left: 2px;
+    text-align: auto;
+    border-radius: none;
+  }
+  .cabecera ul .redes-so-itemslogo {
+    margin-left: 2px;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
+  .imglogo {
+    height: 20px;
+    width: 70px;
+    padding: 2px;
+    margin: 1px;
   }
   .redes-so-items2 {
     display: inline;
@@ -172,6 +212,87 @@ body {
   display: block;
 }
 
+.contenedor {
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.contenedor .listacanciones {
+  text-align: center;
+  margin-right: 35px;
+}
+.contenedor .disco1 {
+  display: flex;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(1, 81, 50, 0.2);
+  padding: 5%;
+  border-width: 5px;
+  border-radius: 15px;
+  border-color: rgb(42, 90, 10);
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.contenedor .disco1 .cover {
+  margin-top: 50px;
+}
+.contenedor .disco1 .cover img {
+  height: 50%;
+  width: 50%;
+  border-color: #9ec7ae;
+  border-style: solid;
+  border-radius: 10px;
+}
+.contenedor .disco1 h2 {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin: 10px;
+  margin-top: 15px;
+  padding: 10px;
+}
+.contenedor .canciones {
+  width: 200px;
+  height: 460px;
+  margin-top: 20px;
+  align-items: center;
+  font-size: center;
+  margin-top: 15px;
+  border-radius: 60px;
+  background: linear-gradient(rgb(0, 0, 0) 10%, hsla(0, 0%, 0%, 0.8) 80%);
+}
+.contenedor .canciones h3 {
+  margin-top: 20px;
+}
+.contenedor .canciones .escucharen2 {
+  display: center;
+  height: 50px;
+  width: 70%;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 14%;
+}
+.contenedor .canciones .escucharen2 .botonescuchar .boton1 {
+  height: 80%;
+  width: 80%;
+  border-radius: 50px;
+  background-color: #012106;
+  color: #747875;
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(42, 90, 10);
+  padding: 5px;
+  margin: 10px;
+  margin-left: 10%;
+}
+.contenedor .canciones .escucharen2 .botonescuchar .boton1:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 80px;
+  border-color: #ffffff;
+}
+
 .banda {
   color: #ffffff;
   text-align: center;
@@ -231,36 +352,8 @@ body {
   padding-bottom: 30px;
 }
 
-.disco1 {
-  display: flex;
-  color: #ffffff;
-  text-align: center;
-  background-color: rgba(1, 81, 50, 0.2);
-  padding: 5%;
-  border-width: 5px;
-  border-radius: 15px;
-  border-color: rgb(42, 90, 10);
-}
-.disco1 img {
-  height: 50%;
-  width: 50%;
-  border-color: #000000;
-  border-style: solid;
-  box-shadow: #000000;
-}
-.disco1 h1 {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 50px;
-}
-.disco1 .canciones {
-  font-size: center;
-  margin-top: 15px;
-  border-radius: 60px;
-  background: linear-gradient(rgb(0, 0, 0) 10%, hsla(0, 0%, 0%, 0.8) 80%);
-}
-.disco1 .canciones h3 {
-  margin-top: 20px;
+.contenedor {
+  margin: 0px;
 }
 
 .disco2 {
@@ -480,33 +573,152 @@ body {
   margin-bottom: 10px;
 }
 
-.contenedor-contacto {
-  color: #ffffff;
-  background-color: #000000;
-  width: 300px;
+.contactanos {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: auto;
   height: auto;
-  padding: 20px 40px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(255, 255, 255);
-  margin: auto;
-  margin-top: 20px;
-}
-
-.contenedor-suscripcion {
-  color: #ffffff;
-  background-color: #000000;
-  width: 300px;
-  height: auto;
-  padding: 20px 5px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(255, 255, 255);
-  margin: 0 auto;
-  margin-top: 80px;
   margin-bottom: 20px;
 }
+.contactanos .titulo {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin: 10px;
+  margin-top: 15px;
+  padding: 10px;
+}
+.contactanos .formulario {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url(../media/logo.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+.contactanos .formulario .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 167, 167, 0.8);
+  border-radius: 20px;
+  margin: 40px 100px 50px 600px;
+  padding: 50px;
+  border-color: #013409;
+  border-style: double;
+  border-width: 10px;
+}
+.contactanos .formulario .boton {
+  padding: 6px;
+  border-radius: 5px;
+}
+.contactanos .formulario .boton:hover {
+  background-color: #747875;
+  color: #ffffff;
+}
 
+@media screen and (max-width: 1000px) {
+  .contactanos {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+  }
+  .contactanos .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url(../media/logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30%;
+  }
+  .contactanos .formulario .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    width: 100%;
+    height: 100%;
+    background-color: #a7a7a7;
+    border-radius: 20px;
+    margin: auto;
+    padding: 50px;
+    border-color: #013409;
+    border-style: double;
+    border-width: 10px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .contactanos {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+  }
+  .contactanos .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url(../media/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+  }
+  .contactanos .formulario .contacto {
+    height: auto;
+    flex-direction: column;
+    align-items: initial;
+    margin: 10px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contactanos {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+  }
+  .contactanos .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url(../media/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+  }
+  .contactanos .formulario .contacto {
+    height: auto;
+    flex-direction: column;
+    align-items: initial;
+    margin: 10px;
+    margin-top: 50px;
+  }
+}
 .cont {
   display: grid;
   padding: 50px;

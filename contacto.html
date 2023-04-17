@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name= "description" content="Contactate con nosotros. Fat Grass es una conocida banda de Stoner Doom metal de Córdoba, Argentina. Escucha su ultimo disco Shadows (2022) aquí./ Contact us. Fat Grass is a well known stoner doom metal band from Córdoba, Argentina. Listen to his latest album Shadows (2022) here.">
-    <meta name="keywords"  content="FATGRASS, fat, grass, contacto, contactate, band, banda, stoner, doom, doommetal, metalband, videos,discografia, Instagram, Youtube, Bandcamp, Argentina.">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name= "description" content="Fat Grass es una conocida banda de Stoner Doom metal de Córdoba, Argentina. Escucha su ultimo disco Shadows (2022) aquí !!!/FatGrass is a well known Stoner Doom metal band from Cordoba, Argentina. Listen to his latest album Shadows (2022) here !!!">
+    <meta name="keywords"  content="FATGRASS, fat, grass, band, banda, stoner, doom, doommetal, metalband, videos,Shadows, discografia, Instagram, Youtube, Bandcamp, Argentina.">
+    <link real="stylesheet" href="./css/bootstrap.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./scss/style.css">
-    <title>Fat Grass-Contacto</title>
-
+    <title>Fat Grass - Contacto</title>
 </head>
 <body>
-    <header class="cabecerasecundaria">
-        <div class="cont-cabe">
+    <header class="cabecera">
+        <div class="cont-cabe2">
             <div class="enlaces-sup">
                 <ul> 
                     <li class="redes-so-itemslogo fadeInLeft"><a href="./index.html">
-                    <img class="imglogo" src="./media/fatgrasshorizontal.png" width= "180px" height="40px" alt="logo banda">
+                    <img class="imglogo" src="./media/fatgrasshorizontal.png" left=0% width= "180px" height="40px" alt="logo banda">
                     </a></li>
                     <li class="redes-so-items2"><a href="https://open.spotify.com/album/7wreVS9M7zkD5VKiXFiF4M?si=YDYzbDXSS0GmdpHzuZox0A" target="_blank"><img src="./media/iconos/spotycolor.png" width= "30px" height="30px" alt="Instagram"></a></li>
-                    <li class="redes-so-items2"><a  href="https://www.instagram.com/fatgrassargentina/" target="_blank"><img src="./media/iconos/instacolor.png" width= "30px" height="30px" alt="Spoty"></a></li>
+                    <li class="redes-so-items2"><a href="https://www.instagram.com/fatgrassargentina/" target="_blank"><img src="./media/iconos/instacolor.png" width= "30px" height="30px" alt="Spoty"></a></li>
                     <li class="redes-so-items2"><a href="https://www.youtube.com/watch?v=rZQdfLvrAWY" target="_blank"><img src="./media/iconos/youtubecolor.png" width= "30px" height="30px" alt="Youtube"></a></li>
                     <li class="redes-so-items2"><a href="https://fatgrass.bandcamp.com/music" target="_blank"><img src="./media/iconos/bccolor.png" width= "30px" height="30px" alt="Bandcamp"></a></li>
                 </ul>
@@ -29,7 +31,8 @@
         </div>
     </header>
     <nav class="navbar">
-        <input type="checkbox" id="check-menu"/>
+        <div class="container-fluid navbar ">                    
+          <input type="checkbox" id="check-menu"/>
         <label for ="check-menu" class="menu"><i class='bx bx-menu'></i></label>
         <ul>
             <li class="nav-item"><a href="./index.html">Inicio</a></li>
@@ -38,56 +41,50 @@
             <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
             <li class="nav-item"><a href="./galeriafull.html">Galeria</a></li>
         </ul>
+        </div>
     </nav>
-    <main>
-        <section class="contacto">
-            <div class="contenedor-contacto"> 
-                <h2>Contacto</h2>
-                <p>Envianos tu consulta</p>
-                <form action="">
-                    <div>
-                        <input type="text" placeholder="Nombre">
-                     </div>
-                    <div>
-                        <input type="text" placeholder="Apellido">
-                    </div>
-                    <div>
-                        <input type="tel" placeholder="Telefono">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email">
-                     </div>
-                    <div>
-                        <input type="text" placeholder="Consulta">
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+    <section class="contactanos">
+        <h1 class="titulo">CONTACTO</h1>
+        <div class="formulario">
+            <div class="contacto">
+                <div class="mb-3">
+                <label for="nombreInput" class="form-label"><strong>Nombre y Apellido</strong></label
+                >
+                <input
+                  type="name"
+                  class="form-control"
+                  id="nombreInput"
+                  placeholder="Nombre y Apellido"
+                />
+                </div>
+                <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label"
+                  ><strong>Email</strong></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="nombre@example.com"
+                />
+                </div>
+                <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">
+                    <strong>Mensaje</strong>
+                </label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Su mensaje">
+                </textarea>
             </div>
-            <div class="contenedor-suscripcion">
-                <h2>Suscripcion</h2>
-                <p>Te enviaremos las novedades (proximas fechas, discos, etc)</p>
-                <form action="">
-                    <div>
-                        <input type="text" placeholder="Nombre">
-                     </div>
-                    <div>
-                        <input type="text" placeholder="Apellido">
-                    </div>
-                    <div>
-                        <input type="tel" placeholder="Telefono">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email">
-                     </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+            <div>
+                <input type="button" class="boton" value="Enviar">
             </div>
-        </section>
-    </main>
+            </div>
+        </div>
+    </section>
     <footer>
         <div>
             <div class="enlaces-footer">
