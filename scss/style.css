@@ -22,15 +22,6 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-h2 {
-  color: #ffffff;
-  margin-bottom: 30px;
-  text-align: center;
-  background-color: #000000;
-  border-radius: 50px;
-  margin-top: 20px;
-}
-
 h3 {
   color: #ffffff;
 }
@@ -274,6 +265,9 @@ body {
   margin: 10px;
   margin-top: 15px;
   padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  /* ----- */
 }
 .contenedor .canciones {
   width: 200px;
@@ -381,6 +375,47 @@ body {
   margin: 0px;
 }
 
+.formatocard {
+  background-image: url(../media/humofondo1.jpg);
+  border-radius: 30px;
+  height: 5%;
+  border-style: solid;
+  border-color: #87ff91;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.card1 {
+  margin: 5%;
+  width: 50%;
+  height: 50%;
+}
+
+.recitales {
+  color: #f3f3f3;
+  background-color: rgba(62, 62, 62, 0.5);
+  background: rgb(107, 203, 77);
+  background: linear-gradient(180deg, rgb(107, 203, 77) 0%, rgb(31, 31, 31) 35%, rgb(0, 0, 0) 68%);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 5%;
+  text-align: center;
+}
+.recitales .titulo2 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 60px;
+}
+.recitales .botonrecital {
+  margin-top: 30px;
+  padding: 30px;
+  align-items: center;
+  background-color: #040404;
+  border-color: #87ff91;
+  font-size: 15px;
+}
+
 .disco2 {
   display: center;
   color: aliceblue;
@@ -398,6 +433,12 @@ body {
   border-radius: 15px;
 }
 .disco2 h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .disco2 h3 {
@@ -505,6 +546,10 @@ body {
   padding: 20px;
   text-align: justify;
   margin: 0px 80px 0px 80px;
+}
+.biotexto h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 .biotexto .pp {
   margin-bottom: 50px;
@@ -831,6 +876,7 @@ body {
   padding: 20px;
 }
 .contgaleria h2 {
+  color: #ffffff;
   margin-bottom: 30px;
   text-align: center;
   background-color: #000000;
@@ -853,6 +899,10 @@ body {
   background-color: rgba(42, 90, 10, 0.8);
   border-radius: 100px;
   padding: 5px;
+}
+.contgaleria .creditos {
+  font-size: 10px;
+  color: #ffffff;
 }
 
 .album1 {
@@ -1021,6 +1071,16 @@ footer .datos .otrosfooter:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 420px) {
+  .footer {
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .enlaces-footer ul .redes-so-items {
+    padding: 14px 14px 14px 14px;
+    margin: 0px;
+  }
+}
 @media screen and (max-width: 360px) {
   .footer {
     padding: 0px;
