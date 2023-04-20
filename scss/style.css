@@ -376,13 +376,15 @@ body {
 }
 
 .formatocard {
+  width: 100%;
   background-image: url(../media/humofondo1.jpg);
   border-radius: 30px;
   height: 5%;
   border-style: solid;
   border-color: #87ff91;
-  margin-top: 50px;
+  margin-top: 0px;
   align-items: center;
+  padding: 50px;
 }
 
 .card1 {
@@ -425,6 +427,7 @@ body {
   height: 20%;
   margin: 10%;
   margin-top: 0%;
+  margin-bottom: 10px;
   padding: 20px;
   text-align: center;
   border-style: solid;
